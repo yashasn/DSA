@@ -9,10 +9,9 @@ def FindGcd(n, m):
     if (n % m) == 0:
         return m
     if (n < m):
-        (n, m) = Swap(n, m)
+        n, m = m , n
     while (m > 0):
-        n = n % m
-        (n, m) = Swap(n, m)
+        n , m = m, n % m
     return n
 
 
