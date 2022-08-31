@@ -1,5 +1,5 @@
-def Swap(n, m):
-    return (m, n)
+# def Swap(n, m):
+#     return (m, n)
 
 # based on Eucledian algorithm
 # when n >m, n = m*q + r, then m become n & r becomes m until r is 0
@@ -18,4 +18,10 @@ def FindGcd(n, m):
 n = int(input("Enter first number:"))
 m = int(input("Enter second number:"))
 
-print(FindGcd(n, m))
+gcd = FindGcd(n,m)
+
+lcm = (n*m)/gcd
+
+print("GCD of %d and %d is %d" %(n,m,gcd))
+print("LCM of %d and %d is %d" %(n,m,lcm))
+
