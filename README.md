@@ -1,0 +1,2 @@
+# DSA
+My practise algorithms
